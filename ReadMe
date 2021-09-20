@@ -1,0 +1,40 @@
+Go Language training Notes:-
+
+    - Simplicity - only 25 keyword
+        - No multiple loop construct
+            - Only for loop, no while loop
+            - if else, switch case, function, var
+        - no concept for class, only struct(for state) and function (for )
+        - no inheritance (only composition - to achieve reusability)
+        - No exceptions (no try catch, only return errors)
+        - No access modifiers - private, public - still controlling visibility is there
+        - No generics (in future, it might have)
+    - Secured - no pointer arithmatic
+    - Performance similar to C
+    - Memory management
+    - Compiled
+    - Concurrency
+        - goroutine are light weights (functions executed concurrently, no need to create any thread)
+        - builtin the language itself
+            - go function() - prefex function name with "go" and it will process it concurrently, 
+            - "go" keyword has datatype called "channel"
+            - "channel" - used to enable communication
+            - "select" construct
+            - "<-" operator ("channel" operator)
+            - in other language, concurrency it added to Language
+        - 1000s of go routines in one OS thread
+        - go routine only takes 2KB per goroutine
+        - built in scheduler
+    - Portability / ease of deployment
+        - single binary
+        - no rooutine dependency (VM)
+
+    
+GIT Link
+    - http://github.com/tkmagesh/Dell-Go-Sep-2021
+
+
+
+
+
+    
