@@ -54,6 +54,10 @@ func main() {
 	logOperation(add2, 34, 54)
 	logOperation(subs, 43, 23)
 
+	adder := getAdder()
+	fmt.Println(adder(100, 200))
+
+
 }
 
 func add(x int, y int) int {
@@ -98,4 +102,10 @@ func logOperation(oper func(int, int) int, x int, y int) {
 func subs(x, y int) int {
 	result := x - y
 	return result
+}
+
+func getAdder() func(int, int) int {
+return func(a int, b int) int {
+	return a + b
+}
 }
