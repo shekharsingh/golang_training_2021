@@ -20,6 +20,16 @@ func main() {
 	fmt.Println(divide(100, 0))
 }
 
+func divideClient(x, y int) (result int, err error) {
+	defer func() {
+		if e := recover(); e != nil {
+			err = errors.New("Unable to divide!")
+		}
+	}()
+	result = divide(x, y)
+	return
+}
+
 func divide(x, y int) int {
 	if y == 0 {
 		panic(divisionByZeroError)
